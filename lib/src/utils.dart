@@ -9,6 +9,7 @@ Future getJSON(http.StreamedResponse response) async {
 
   if (!emptyCodes.contains(response.statusCode)) {
     final String str = await response.stream.bytesToString();
+    print(str);
     return json.decode(str);
   }
 
