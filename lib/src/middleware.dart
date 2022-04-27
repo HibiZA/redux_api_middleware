@@ -13,7 +13,7 @@ void apiMiddleware<State>(
   dynamic action,
   NextDispatcher next,
 ) async {
-  if (!isRSAA(action)) {
+  if (isRSAA(action) == false) {
     next(action);
     return;
   }

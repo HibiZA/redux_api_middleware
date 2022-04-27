@@ -34,7 +34,7 @@ bool isMap(obj) {
 }
 
 bool isRSAA(action) {
-  return isMap(action) && action.containsKey(RSAA);
+  return (isMap(action) && action.containsKey(RSAA));
 }
 
 bool isValidTypeDescriptor(obj) {
