@@ -30,7 +30,7 @@ const validCredentials = [
 ];
 
 bool isMap(obj) {
-  return (obj != null && obj.entries != null);
+  return (obj != null && obj is Map);
 }
 
 bool isRSAA(action) {
