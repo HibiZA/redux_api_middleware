@@ -14,6 +14,7 @@ void apiMiddleware<State>(
   NextDispatcher next,
 ) async {
   if (isRSAA(action) == false) {
+    print('not RSAA');
     next(action);
     return;
   }
